@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/ControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Suppliers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/SuppliersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/SuppliersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/ControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersRegisterDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersUpdateDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Models/Contract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Models/Suppliers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/SuppliersRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/SuppliersMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/SuppliersService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;isa-ntana&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:isa-ntana/XYZ-company-management_API.git",
+    "accountId": "09a02063-544d-4882-96fa-70ffb60c3acc"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2o4jsGMOyiOg8SFfiSJKOSftp7b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.XyzCompanyManagementApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/isabela.camelo/IdeaProjects/supplier_management&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="XyzCompanyManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="XYZ_company_management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.zup.XYZ_company_management.XyzCompanyManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="" />
+      <created>1730135946831</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730135946831</updated>
+      <workItem from="1730135948014" duration="36709000" />
+      <workItem from="1730312431507" duration="8755000" />
+      <workItem from="1730390048791" duration="307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/XYZ_company_management$XyzCompanyManagementApplication.ic" NAME="XyzCompanyManagementApplication Coverage Results" MODIFIED="1730306204694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
