@@ -18,20 +18,16 @@ public class ContractService {
     @Autowired
     private SuppliersRepository suppliersRepository;
 
-    public Contract saveContractById(String supplierId, Contract contract) {
-        Suppliers supplier = suppliersRepository.findById(supplierId)
+    public Contract saveContractById(UUID supplierId, Contract contract) {
+        Supplier supplier = suppliersRepository.findById(supplierId)
                 .orElseThrow(() -> new RuntimeException("Supplier not found"));
 
-        if (contract.getId() == null) {
-            contract.setId(UUID.randomUUID().toString());
-        }
-
-        contract.setSuppliers(supplier);
+        contract.setSupplier(supplier);
         return contractRepository.save(contract);
     }
 
-    public List<Contract> findAllContractsBySupplierId(String supplierId) {
-        List<Contract> allContracts = contractRepository.findBySuppliersId(supplierId);
+    public List<Contract> findAllContractsBySupplierId(UUID supplierId) {
+        List<Contract> allContracts = contractRepository.findBySupplierId(supplierId);
         selectionSortByActive(allContracts);
         return allContracts;
     }
@@ -50,16 +46,16 @@ public class ContractService {
         }
     }
 
-    public Contract findContractById(String id) {
+    public Contract findContractById(UUID id) {
         Optional<Contract> contract = contractRepository.findById(id);
         return contract.orElseThrow(() -> new RuntimeException("Contract not found"));
     }
 
-    public void deleteContract(String id) {
+    public void deleteContract(UUID id) {
         contractRepository.deleteById(id);
     }
 
-    public Contract updateContract(String contractId, Contract contractRequest) {
+    public Contract updateContract(UUID contractId, Contract contractRequest) {
         Contract existingContract = contractRepository.findById(contractId)
                 .orElseThrow(() -> new RuntimeException("Contract not found to update"));
 
@@ -89,21 +85,21 @@ public class ContractService {
         return contractRepository.save(existingContract);
     }
 
-    public List<Contract> findContractsByFilters(String supplierId,
+    public List<Contract> findContractsByFilters(UUID supplierId,
                                                  Optional<LocalDate> beginContract,
                                                  Optional<LocalDate> endContract,
                                                  Optional<String> description,
                                                  Optional<Boolean> active) {
         if (beginContract.isPresent()) {
-            return contractRepository.findBySuppliersIdAndBeginContract(supplierId, beginContract.get());
+            return contractRepository.findBySupplierIdAndBeginContract(supplierId, beginContract.get());
         } else if (endContract.isPresent()) {
-            return contractRepository.findBySuppliersIdAndEndContract(supplierId, endContract.get());
+            return contractRepository.findBySupplierIdAndEndContract(supplierId, endContract.get());
         } else if (description.isPresent()) {
-            return contractRepository.findBySuppliersIdAndDescription(supplierId, description.get());
+            return contractRepository.findBySupplierIdAndDescription(supplierId, description.get());
         } else if (active.isPresent()) {
-            return contractRepository.findBySuppliersIdAndActive(supplierId, active.get());
+            return contractRepository.findBySupplierIdAndActive(supplierId, active.get());
         }
 
-            return contractRepository.findBySuppliersId(supplierId);
+            return contractRepository.findBySupplierId(supplierId);
     }
 }

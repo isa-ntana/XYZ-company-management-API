@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Entity
 @Setter
@@ -13,7 +14,8 @@ import java.time.LocalDate;
 @Table(name = "contract")
 public class Contract {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
     private String numberContract;
     private LocalDate beginContract;
     private LocalDate endContract;
@@ -23,7 +25,7 @@ public class Contract {
 
     @ManyToOne
     @JoinColumn(name = "supplier_id")
-    private Suppliers suppliers;
+    private Supplier supplier;
 
     public Contract() {}
 

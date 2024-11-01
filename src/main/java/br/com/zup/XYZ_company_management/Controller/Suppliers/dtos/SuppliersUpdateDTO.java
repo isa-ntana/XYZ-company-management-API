@@ -6,12 +6,14 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @Setter
 @Getter
 public class SuppliersUpdateDTO {
     @JsonIgnore
     @NotBlank(message = "insert a valid id")
-    private String id;
+    private UUID id;
     @NotBlank(message = "need a valid supplier name")
     private String supplierName;
     @NotBlank(message = "cnpj cant be blank")

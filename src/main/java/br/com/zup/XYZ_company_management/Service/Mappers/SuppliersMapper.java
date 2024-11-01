@@ -3,29 +3,29 @@ package br.com.zup.XYZ_company_management.Service.Mappers;
 
 import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersRegisterDTO;
 import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersUpdateDTO;
-import br.com.zup.XYZ_company_management.Models.Suppliers;
+import br.com.zup.XYZ_company_management.Models.Supplier;
 
 public class SuppliersMapper {
-    public static Suppliers fromSupplierDTO(SuppliersRegisterDTO registerDTO){
-        Suppliers suppliers = new Suppliers();
+    public static Supplier fromSupplierDTO(SuppliersRegisterDTO registerDTO){
+        Supplier supplier = new Supplier();
 
-        suppliers.setSupplierName(registerDTO.getSupplierName());
-        suppliers.setCnpj(registerDTO.getCnpj());
-        suppliers.setTelephoneNumber(registerDTO.getTelephoneNumber());
-        suppliers.setAddress(registerDTO.getAddress());
+        supplier.setSupplierName(registerDTO.getSupplierName());
+        supplier.setCnpj(registerDTO.getCnpj());
+        supplier.setTelephoneNumber(registerDTO.getTelephoneNumber());
+        supplier.setAddress(registerDTO.getAddress());
 
-        return suppliers;
+        return supplier;
     }
 
-    public static Suppliers fromSupplierUpdateDTO(SuppliersUpdateDTO updateDTO){
-        Suppliers suppliers = new Suppliers();
+    public static Supplier fromSupplierUpdateDTO(SuppliersUpdateDTO updateDTO){
+        Supplier supplier = new Supplier();
 
-        suppliers.setId(updateDTO.getId());
-        suppliers.setSupplierName(updateDTO.getSupplierName());
-        suppliers.setCnpj(updateDTO.getCnpj());
-        suppliers.setTelephoneNumber(updateDTO.getTelephoneNumber());
-        suppliers.setAddress(updateDTO.getAddress());
+        supplier.setId(updateDTO.getId());
+        supplier.setSupplierName(updateDTO.getSupplierName());
+        supplier.setCnpj(updateDTO.getCnpj());
+        supplier.setTelephoneNumber(updateDTO.getTelephoneNumber());
+        supplier.setAddress(updateDTO.getAddress());
 
-        return suppliers;
+        return supplier;
     }
 }

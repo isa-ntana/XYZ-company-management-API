@@ -4,7 +4,7 @@ import br.com.zup.XYZ_company_management.Controller.Contract.dtos.ContractRegist
 import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersRegisterDTO;
 import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersUpdateDTO;
 import br.com.zup.XYZ_company_management.Models.Contract;
-import br.com.zup.XYZ_company_management.Models.Suppliers;
+import br.com.zup.XYZ_company_management.Models.Supplier;
 import br.com.zup.XYZ_company_management.Service.ContractService;
 import br.com.zup.XYZ_company_management.Service.Mappers.ContractMapper;
 import br.com.zup.XYZ_company_management.Service.Mappers.SuppliersMapper;
@@ -26,47 +26,47 @@ public class SuppliersController {
     private ContractService contractService;
 
     @GetMapping
-    public List<Suppliers> getAllSuppliers() { return suppliersService.getAllSuppliers(); }
+    public List<Supplier> getAllSuppliers() { return suppliersService.getAllSuppliers(); }
 
     @GetMapping("/{supplierId}")
-    public Suppliers findSupplierById(@PathVariable String supplierId) {
+    public Supplier findSupplierById(@PathVariable UUID supplierId) {
         return suppliersService.findSupplierById(supplierId);
     }
 
     @PostMapping
-    public Suppliers addSupplier(@Valid @RequestBody SuppliersRegisterDTO registerDTO) {
+    public Supplier addSupplier(@Valid @RequestBody SuppliersRegisterDTO registerDTO) {
         return suppliersService.saveSupplier(registerDTO);
     }
 
     @PutMapping("/{supplierId}")
-    public Suppliers updateSupplier(@PathVariable String supplierId, @Valid @RequestBody SuppliersUpdateDTO updateDTO) {
+    public Supplier updateSupplier(@PathVariable UUID supplierId, @Valid @RequestBody SuppliersUpdateDTO updateDTO) {
             return suppliersService.updateSupplier(supplierId, SuppliersMapper.fromSupplierUpdateDTO(updateDTO));
     }
 
     @DeleteMapping("/{supplierId}")
-    public void deleteSupplier(@PathVariable String supplierId) {
+    public void deleteSupplier(@PathVariable UUID supplierId) {
         suppliersService.deleteSupplier(supplierId);
     }
 
     @GetMapping("/{contractId}")
-    public Contract findContractById(@PathVariable String contractId) {
+    public Contract findContractById(@PathVariable UUID contractId) {
         return contractService.findContractById(contractId);
     }
 
     @GetMapping("/{supplierId}/contracts")
-    public List<Contract> getContractsBySupplierId(@PathVariable String supplierId) {
+    public List<Contract> getContractsBySupplierId(@PathVariable UUID supplierId) {
         return contractService.findAllContractsBySupplierId(supplierId);
     }
 
     @PostMapping("/{supplierId}/newContract")
-    public Contract addContractById(@PathVariable String supplierId, @RequestBody ContractRegisterDTO registerDTO) {
+    public Contract addContractById(@PathVariable UUID supplierId, @RequestBody ContractRegisterDTO registerDTO) {
         Contract contract = ContractMapper.fromContractDTO(registerDTO);
         return contractService.saveContractById(supplierId, contract);
     }
 
     @GetMapping("/{supplierId}/findContracts")
     public List<Contract> getContractsByFilters(
-            @PathVariable String supplierId,
+            @PathVariable UUID supplierId,
             @RequestParam Optional<LocalDate> beginContract,
             @RequestParam Optional<LocalDate> endContract,
             @RequestParam Optional<String> description,

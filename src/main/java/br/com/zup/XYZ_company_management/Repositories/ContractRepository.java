@@ -8,14 +8,14 @@ import java.time.LocalDate;
 import java.util.*;
 
 @Repository
-public interface ContractRepository extends JpaRepository<Contract, String> {
-    List<Contract> findBySuppliersId(String supplierId);
+public interface ContractRepository extends JpaRepository<Contract, UUID> {
+    List<Contract> findBySupplierId(UUID supplierId);
 
-    List<Contract> findBySuppliersIdAndBeginContract(String supplierId, LocalDate beginContract);
+    List<Contract> findBySupplierIdAndBeginContract(UUID supplierId, LocalDate beginContract);
 
-    List<Contract> findBySuppliersIdAndActive(String supplierId, boolean active);
+    List<Contract> findBySupplierIdAndActive(UUID supplierId, boolean active);
 
-    List<Contract> findBySuppliersIdAndEndContract(String supplierId, LocalDate endContract);
+    List<Contract> findBySupplierIdAndEndContract(UUID supplierId, LocalDate endContract);
 
-    List<Contract> findBySuppliersIdAndDescription(String supplierId, String description);
+    List<Contract> findBySupplierIdAndDescription(UUID supplierId, String description);
 }

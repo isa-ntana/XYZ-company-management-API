@@ -7,6 +7,8 @@ import br.com.zup.XYZ_company_management.Service.Mappers.ContractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/contracts")
 public class ContractController {
@@ -14,13 +16,13 @@ public class ContractController {
     private ContractService contractService;
 
     @PutMapping("/{contractId}")
-    public Contract updateContract(@PathVariable String contractId, @RequestBody ContractUpdateDTO updateDTO) {
+    public Contract updateContract(@PathVariable UUID contractId, @RequestBody ContractUpdateDTO updateDTO) {
         Contract contract = ContractMapper.fromContractUpdateDTO(updateDTO);
         return contractService.updateContract(contractId, contract);
     }
 
     @DeleteMapping("/{contractId}")
-    public void deleteContract(@PathVariable String contractId) {
+    public void deleteContract(@PathVariable UUID contractId) {
         contractService.deleteContract(contractId);
     }
 }
