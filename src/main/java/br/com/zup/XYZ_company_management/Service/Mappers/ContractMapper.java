@@ -14,7 +14,7 @@ public class ContractMapper {
         contract.setNumberContract(registerDTO.getNumberContract());
         contract.setBeginContract(registerDTO.getBeginContract());
         contract.setEndContract(registerDTO.getEndContract());
-        contract.setValue((BigDecimal) registerDTO.getValue());
+        contract.setValue(registerDTO.getValue());
         contract.setDescription(registerDTO.getDescription());
         contract.setActive(checkActivity(registerDTO.getEndContract()));
 
@@ -33,7 +33,7 @@ public class ContractMapper {
         contract.setNumberContract(updateDTO.getNumberContract());
         contract.setBeginContract(updateDTO.getBeginContract());
         contract.setEndContract(updateDTO.getEndContract());
-        contract.setValue((BigDecimal) updateDTO.getValue());
+        contract.setValue(updateDTO.getValue());
         contract.setDescription(updateDTO.getDescription());
         contract.setActive(checkActivity(updateDTO.getEndContract()));
 

@@ -2,6 +2,7 @@ package br.com.zup.XYZ_company_management.Service;
 
 import br.com.zup.XYZ_company_management.Models.*;
 import br.com.zup.XYZ_company_management.Repositories.*;
+import br.com.zup.XYZ_company_management.Service.Mappers.ContractMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,9 +22,11 @@ public class ContractService {
         Suppliers supplier = suppliersRepository.findById(supplierId)
                 .orElseThrow(() -> new RuntimeException("Supplier not found"));
 
-        contract.setSuppliers(supplier);
-        contract.setActive(shouldBeActive(supplierId, contract.getEndContract()));
+        if (contract.getId() == null) {
+            contract.setId(UUID.randomUUID().toString());
+        }
 
+        contract.setSuppliers(supplier);
         return contractRepository.save(contract);
     }
 
@@ -46,7 +49,6 @@ public class ContractService {
             contracts.set(index, temp);
         }
     }
-
 
     public Contract findContractById(String id) {
         Optional<Contract> contract = contractRepository.findById(id);
@@ -81,18 +83,10 @@ public class ContractService {
             existingContract.setDescription(contractRequest.getDescription());
         }
 
-        existingContract.setActive(shouldBeActive(existingContract.getSuppliers().getId(),
-                existingContract.getEndContract()));
+        existingContract.setActive(ContractMapper.checkActivity(existingContract.getEndContract()));
+
 
         return contractRepository.save(existingContract);
-    }
-
-    private boolean shouldBeActive(String supplierId, LocalDate endContract) {
-        List<Contract> contracts = contractRepository.findBySuppliersId(supplierId);
-        return contracts.stream()
-                .filter(contract -> contract.getEndContract().isAfter(LocalDate.now()))
-                .max(Comparator.comparing(Contract::getEndContract))
-                .map(contract -> contract.getEndContract().isAfter(endContract)).orElse(true);
     }
 
     public List<Contract> findContractsByFilters(String supplierId,

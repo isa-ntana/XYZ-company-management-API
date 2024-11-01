@@ -58,7 +58,7 @@ public class SuppliersController {
         return contractService.findAllContractsBySupplierId(supplierId);
     }
 
-    @PostMapping("/{supplierId}/contracts")
+    @PostMapping("/{supplierId}/newContract")
     public Contract addContractById(@PathVariable String supplierId, @RequestBody ContractRegisterDTO registerDTO) {
         Contract contract = ContractMapper.fromContractDTO(registerDTO);
         return contractService.saveContractById(supplierId, contract);

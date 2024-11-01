@@ -15,7 +15,13 @@ public class SuppliersService {
     private SuppliersRepository suppliersRepository;
 
     public Suppliers saveSupplier(SuppliersRegisterDTO suppliers) {
-        return this.suppliersRepository.save(SuppliersMapper.fromSupplierDTO(suppliers));
+        Suppliers supplierEntity = SuppliersMapper.fromSupplierDTO(suppliers);
+
+        if (supplierEntity.getId() == null) {
+            supplierEntity.setId(UUID.randomUUID().toString());
+        }
+
+        return this.suppliersRepository.save(supplierEntity);
     }
 
     public List<Suppliers> getAllSuppliers() { return suppliersRepository.findAll(); }

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="" />
+    <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Suppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +113,7 @@
       <updated>1730135946831</updated>
       <workItem from="1730135948014" duration="36709000" />
       <workItem from="1730312431507" duration="8755000" />
-      <workItem from="1730390048791" duration="5628000" />
+      <workItem from="1730390048791" duration="10353000" />
     </task>
     <servers />
   </component>
