@@ -72,6 +72,7 @@ public class SuppliersController {
             @RequestParam Optional<String> description,
             @RequestParam Optional<Boolean> active) {
 
-        return contractService.findContractsByFilters(supplierId, beginContract, endContract, description, active);
+        return contractService.findContractsByFilters(
+                supplierId, beginContract, endContract, description, active);
     }
 }

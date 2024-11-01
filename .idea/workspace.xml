@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" afterDir="false" />
-    </list>
+    <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +97,7 @@
       <updated>1730135946831</updated>
       <workItem from="1730135948014" duration="36709000" />
       <workItem from="1730312431507" duration="8755000" />
-      <workItem from="1730390048791" duration="5311000" />
+      <workItem from="1730390048791" duration="5628000" />
     </task>
     <servers />
   </component>

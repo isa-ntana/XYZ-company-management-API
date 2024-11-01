@@ -22,7 +22,6 @@ public class Suppliers {
     private String address;
 
     @OneToMany(mappedBy = "suppliers", cascade = CascadeType.ALL)
-    @JsonIgnore
     private List<Contract> contracts;
 
     public Suppliers() { this.id = UUID.randomUUID().toString(); }

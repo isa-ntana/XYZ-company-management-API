@@ -109,6 +109,7 @@ public class ContractService {
         } else if (active.isPresent()) {
             return contractRepository.findBySuppliersIdAndActive(supplierId, active.get());
         }
+
             return contractRepository.findBySuppliersId(supplierId);
     }
 }
