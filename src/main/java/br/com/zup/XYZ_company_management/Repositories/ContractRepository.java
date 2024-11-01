@@ -18,4 +18,6 @@ public interface ContractRepository extends JpaRepository<Contract, UUID> {
     List<Contract> findBySupplierIdAndEndContract(UUID supplierId, LocalDate endContract);
 
     List<Contract> findBySupplierIdAndDescription(UUID supplierId, String description);
+
+    List<Contract> findByEndContractBefore(LocalDate endContract);
 }

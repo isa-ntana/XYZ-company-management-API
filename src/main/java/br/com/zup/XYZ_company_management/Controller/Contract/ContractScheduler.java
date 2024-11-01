@@ -2,6 +2,7 @@ package br.com.zup.XYZ_company_management.Controller.Contract;
 
 import br.com.zup.XYZ_company_management.Models.Contract;
 import br.com.zup.XYZ_company_management.Repositories.ContractRepository;
+import br.com.zup.XYZ_company_management.Service.ContractService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -13,18 +14,15 @@ import java.util.List;
 public class ContractScheduler {
 
     @Autowired
-    private ContractRepository contractRepository;
+    private ContractService contractService;
 
-    @Scheduled(fixedRate = 3600000)
-    public void updateContractStatuses() {
-        List<Contract> contracts = contractRepository.findAll();
-        LocalDate now = LocalDate.now();
+    @Scheduled(cron = "0 0/1 * ? * *")
+    public void updateContractStatus() {
+        List<Contract> expiredContracts = contractService.findContractsExpiringBefore(LocalDate.now());
 
-        for (Contract contract : contracts) {
-            if (contract.getEndContract().isBefore(now)) {
-                contract.setActive(false);
-                contractRepository.save(contract);
-            }
+        for (Contract contrato : expiredContracts) {
+            contrato.setActive(false);
+            contractService.saveContract(contrato);
         }
     }
 }

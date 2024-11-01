@@ -18,6 +18,14 @@ public class ContractService {
     @Autowired
     private SuppliersRepository suppliersRepository;
 
+    public List<Contract> findContractsExpiringBefore(LocalDate endContract) {
+        return contractRepository.findByEndContractBefore(endContract);
+    }
+
+    public Contract saveContract(Contract contract) {
+        return contractRepository.save(contract);
+    }
+
     public Contract saveContractById(UUID supplierId, Contract contract) {
         Supplier supplier = suppliersRepository.findById(supplierId)
                 .orElseThrow(() -> new RuntimeException("Supplier not found"));
