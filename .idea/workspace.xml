@@ -10,11 +10,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <updated>1730135946831</updated>
       <workItem from="1730135948014" duration="36709000" />
       <workItem from="1730312431507" duration="8755000" />
-      <workItem from="1730390048791" duration="4669000" />
+      <workItem from="1730390048791" duration="5311000" />
     </task>
     <servers />
   </component>
