@@ -5,6 +5,7 @@ import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersRegi
 import br.com.zup.XYZ_company_management.Controller.Suppliers.dtos.SuppliersUpdateDTO;
 import br.com.zup.XYZ_company_management.Models.Contract;
 import br.com.zup.XYZ_company_management.Models.Supplier;
+import br.com.zup.XYZ_company_management.Repositories.SuppliersRepository;
 import br.com.zup.XYZ_company_management.Service.ContractService;
 import br.com.zup.XYZ_company_management.Service.Mappers.ContractMapper;
 import br.com.zup.XYZ_company_management.Service.Mappers.SuppliersMapper;
@@ -28,7 +29,7 @@ public class SuppliersController {
     @GetMapping
     public List<Supplier> getAllSuppliers() { return suppliersService.getAllSuppliers(); }
 
-    @GetMapping("/{supplierId}")
+    @GetMapping("/{supplierId}/findSupplier")
     public Supplier findSupplierById(@PathVariable UUID supplierId) {
         return suppliersService.findSupplierById(supplierId);
     }
@@ -59,7 +60,8 @@ public class SuppliersController {
     }
 
     @PostMapping("/{supplierId}/newContract")
-    public Contract addContractById(@PathVariable UUID supplierId, @RequestBody ContractRegisterDTO registerDTO) {
+    public Contract addContractById(@PathVariable UUID supplierId,
+                                    @Valid @RequestBody ContractRegisterDTO registerDTO) {
         Contract contract = ContractMapper.fromContractDTO(registerDTO);
         return contractService.saveContractById(supplierId, contract);
     }
