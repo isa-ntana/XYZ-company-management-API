@@ -27,25 +27,24 @@ public class ContractService {
         return contractRepository.save(contract);
     }
 
-    public Map<String, List<Contract>> findAllContractsBySupplierId(String supplierId) {
+    public List<Contract> findAllContractsBySupplierId(String supplierId) {
         List<Contract> allContracts = contractRepository.findBySuppliersId(supplierId);
+        selectionSortByActive(allContracts);
+        return allContracts;
+    }
 
-        List<Contract> activeContracts = new ArrayList<>();
-        List<Contract> inactiveContracts = new ArrayList<>();
-
-        for (Contract contract : allContracts) {
-            if (contract.isActive()) {
-                activeContracts.add(contract);
-            } else {
-                inactiveContracts.add(contract);
+    private void selectionSortByActive(List<Contract> contracts) {
+        for (int index = 0; index < contracts.size() - 1; index++) {
+            int minIndex = index;
+            for (int subIndex = index + 1; subIndex < contracts.size(); subIndex++) {
+                if (!contracts.get(minIndex).isActive() && contracts.get(subIndex).isActive()) {
+                    minIndex = subIndex;
+                }
             }
+            Contract temp = contracts.get(minIndex);
+            contracts.set(minIndex, contracts.get(index));
+            contracts.set(index, temp);
         }
-
-        Map<String, List<Contract>> organizedContracts = new HashMap<>();
-        organizedContracts.put("active", activeContracts);
-        organizedContracts.put("inactive", inactiveContracts);
-
-        return organizedContracts;
     }
 
 
@@ -94,5 +93,22 @@ public class ContractService {
                 .filter(contract -> contract.getEndContract().isAfter(LocalDate.now()))
                 .max(Comparator.comparing(Contract::getEndContract))
                 .map(contract -> contract.getEndContract().isAfter(endContract)).orElse(true);
+    }
+
+    public List<Contract> findContractsByFilters(String supplierId,
+                                                 Optional<LocalDate> beginContract,
+                                                 Optional<LocalDate> endContract,
+                                                 Optional<String> description,
+                                                 Optional<Boolean> active) {
+        if (beginContract.isPresent()) {
+            return contractRepository.findBySuppliersIdAndBeginContract(supplierId, beginContract.get());
+        } else if (endContract.isPresent()) {
+            return contractRepository.findBySuppliersIdAndEndContract(supplierId, endContract.get());
+        } else if (description.isPresent()) {
+            return contractRepository.findBySuppliersIdAndDescription(supplierId, description.get());
+        } else if (active.isPresent()) {
+            return contractRepository.findBySuppliersIdAndActive(supplierId, active.get());
+        }
+            return contractRepository.findBySuppliersId(supplierId);
     }
 }

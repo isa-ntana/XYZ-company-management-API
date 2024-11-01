@@ -5,53 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08be416c-67aa-4d2c-a15d-02d0538f392a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/ControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersRegisterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersUpdateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Models/Suppliers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/SuppliersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/Mappers/SuppliersMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/zup/XYZ_company_management/XyzCompanyManagementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractRegisterDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/dtos/ContractUpdateDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/ControllerAdvice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersRegisterDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/dtos/SuppliersUpdateDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Models/Contract.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Models/Suppliers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/SuppliersRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/ContractMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/Mappers/SuppliersMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/SuppliersService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/XyzCompanyManagementApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Repositories/ContractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/zup/XYZ_company_management/Service/SuppliersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Contract/ContractController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Controller/Suppliers/SuppliersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Repositories/ContractRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/zup/XYZ_company_management/Service/ContractService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +40,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "git@github.com:isa-ntana/XYZ-company-management_API.git",
+    "url": "git@github.com:isa-ntana/XYZ-company-management-API.git",
     "accountId": "09a02063-544d-4882-96fa-70ffb60c3acc"
   }
 }]]></component>
@@ -99,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XyzCompanyManagementApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/isabela.camelo/IdeaProjects/supplier_management&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.XyzCompanyManagementApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/isabela.camelo/IdeaProjects/events_calendar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="XyzCompanyManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="XYZ_company_management" />
@@ -145,7 +108,7 @@
       <updated>1730135946831</updated>
       <workItem from="1730135948014" duration="36709000" />
       <workItem from="1730312431507" duration="8755000" />
-      <workItem from="1730390048791" duration="307000" />
+      <workItem from="1730390048791" duration="4669000" />
     </task>
     <servers />
   </component>

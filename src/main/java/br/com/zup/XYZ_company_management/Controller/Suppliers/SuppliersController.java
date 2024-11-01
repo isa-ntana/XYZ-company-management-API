@@ -13,6 +13,7 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.*;
 
 @RestController
@@ -53,14 +54,24 @@ public class SuppliersController {
     }
 
     @GetMapping("/{supplierId}/contracts")
-    public Map<String, List<Contract>> getContractsBySupplierId(@PathVariable String supplierId) {
+    public List<Contract> getContractsBySupplierId(@PathVariable String supplierId) {
         return contractService.findAllContractsBySupplierId(supplierId);
     }
-
 
     @PostMapping("/{supplierId}/contracts")
     public Contract addContractById(@PathVariable String supplierId, @RequestBody ContractRegisterDTO registerDTO) {
         Contract contract = ContractMapper.fromContractDTO(registerDTO);
         return contractService.saveContractById(supplierId, contract);
+    }
+
+    @GetMapping("/{supplierId}/findContracts")
+    public List<Contract> getContractsByFilters(
+            @PathVariable String supplierId,
+            @RequestParam Optional<LocalDate> beginContract,
+            @RequestParam Optional<LocalDate> endContract,
+            @RequestParam Optional<String> description,
+            @RequestParam Optional<Boolean> active) {
+
+        return contractService.findContractsByFilters(supplierId, beginContract, endContract, description, active);
     }
 }
